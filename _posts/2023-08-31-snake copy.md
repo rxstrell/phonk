@@ -1,10 +1,10 @@
 ---
 comments: True
 layout: post
-title: Apple Snake Game
-description: Simple  Apple Snake Game
+title: Apple Snake Game 
+description: Simple  Apple Snake Game 
 type: hacks
-courses: {'csse': {'week': 2}}
+courses: {'cse': {'week': }}
 categories: ['C4.1']
 ---
 
@@ -72,12 +72,6 @@ categories: ['C4.1']
     }
 </style>
 
-<!-- Player Name Input -->
-<div id="player_input" class="py-4 text-light">
-    <label for="player_name">Enter Your Name:</label>
-    <input id="player_name" type="text" placeholder="Your Name">
-    <button id="start_game" class="link-alert">Start Game</button>
-</div>
 
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -141,6 +135,7 @@ categories: ['C4.1']
         const screen_menu = document.getElementById("menu");
         const screen_game_over = document.getElementById("gameover");
         const screen_setting = document.getElementById("setting");
+        
         // HTML Event IDs (a tags)
         const button_new_game = document.getElementById("new_game");
         const button_new_game1 = document.getElementById("new_game1");
@@ -189,21 +184,6 @@ categories: ['C4.1']
         /* Actions and Events  */
         /////////////////////////////////////////////////////////////
         window.onload = function () {
-            // Get player name input and start game button
-const playerNameInput = document.getElementById("player_name");
-const startGameButton = document.getElementById("start_game");
-
-startGameButton.onclick = function () {
-    const playerName = playerNameInput.value;
-    if (playerName.trim() !== "") {
-        // Hide the player input screen
-        document.getElementById("player_input").style.display = "none";
-        // Start the game with the player's name
-        newGame(playerName);
-    } else {
-        alert("Please enter your name.");
-    }
-};
             // HTML Events to Functions
             button_new_game.onclick = function () { newGame(); };
             button_new_game1.onclick = function () { newGame(); };
