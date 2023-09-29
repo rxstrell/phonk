@@ -8,8 +8,6 @@ courses: {'csse': {'week': 4}}
 categories: ['C4.1']
 ---
 
-
-
 <!-- 
 Hack 0: Right justify result
 Hack 1: Test conditions on small, big, and decimal numbers, report on findings. Fix issues.
